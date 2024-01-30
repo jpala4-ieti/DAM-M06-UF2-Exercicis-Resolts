@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+   <class name="com.project.pr220.Ciutat" table="Ciutat">
+        <meta attribute = "class-description">
+            This class contains the Ciutat detail. 
+        </meta>
+        <id name="ciutatId" type="long" column="ciutatId">
+            <generator class="native"/>
+        </id>
+        <property name="nom" column="nom" type="string"/>
+        <property name="pais" column="pais" type="string"/>
+        <property name="codiPostal" column="codiPostal" type="int"/>
+   </class>
+</hibernate-mapping>
